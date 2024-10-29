@@ -14,13 +14,20 @@
   "license": "Apache-2.0",
   "devDependencies": {
     "cordova-android": "^13.0.0",
+    "cordova-plugin-advanced-http": "^3.3.1",
+    "cordova-plugin-file": "^8.1.1",
     "webpack": "^5.95.0",
     "webpack-cli": "^5.1.4"
   },
   "cordova": {
     "platforms": [
       "android"
-    ]
+    ],
+    "plugins": {
+      "cordova-plugin-advanced-http": {
+        "ANDROIDBLACKLISTSECURESOCKETPROTOCOLS": "SSLv3,TLSv1"
+      }
+    }
   },
   "dependencies": {
     "axios": "^1.7.7"
