@@ -1,11 +1,11 @@
-const axios = require('axios').default;
-
 const main = () => {
   const el = document.querySelector('textarea');
   el.innerText = 'fetching...';
 
-  axios.get('https://www.example.com/').then(res => {
-    el.innerText = res.data;
+  cordova.plugin.http.sendRequest('https://www.example.com/', {}, res => {
+    el.innerText = 'OK\n' + res.data;
+  }, res => {
+    el.innerText = 'error\n' + res.error;
   });
 };
 
