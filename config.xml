@@ -9,5 +9,5 @@
     <allow-intent href="http://*/*" />
     <allow-intent href="https://*/*" />
 
-    <access origin="*" />
+    <preference name="AndroidInsecureFileModeEnabled" value="true" />
 </widget>
