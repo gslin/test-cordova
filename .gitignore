@@ -2,4 +2,5 @@
 /platforms/
 /plugins/
 node_modules/
+www/css/
 www/js/
