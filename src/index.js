@@ -1,10 +1,12 @@
-import axios from 'axios';
+const axios = require('axios').default;
 
-const main = async () => {
-  const res = await axios.get('https://www.example.com/');
-
+const main = () => {
   const el = document.querySelector('textarea');
-  el.innerText = await res.data;
+  el.innerText = 'fetching...';
+
+  axios.get('https://www.example.com/').then(res => {
+    el.innerText = res.data;
+  });
 };
 
 document.addEventListener('deviceready', main, false);
