@@ -17,6 +17,7 @@
     "cordova-android": "^13.0.0",
     "cordova-plugin-advanced-http": "^3.3.1",
     "cordova-plugin-file": "^8.1.1",
+    "cordova-sqlite-storage": "^6.1.0",
     "css-loader": "^7.1.2",
     "postcss": "^8.4.47",
     "tailwindcss": "^3.4.14",
@@ -30,7 +31,8 @@
     "plugins": {
       "cordova-plugin-advanced-http": {
         "ANDROIDBLACKLISTSECURESOCKETPROTOCOLS": "SSLv3,TLSv1"
-      }
+      },
+      "cordova-sqlite-storage": {}
     }
   },
   "dependencies": {
