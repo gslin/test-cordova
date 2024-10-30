@@ -4,8 +4,8 @@
     <hr>
     <h2>IP address</h2>
     <p>Information from <a href="https://httpbin.org/ip">https://httpbin.org/ip</a>:</p>
-    <pre class="bg-slate-100 border font-mono p-4 rounded shadow w-full">{{ ip_status }}</pre>
-    <pre class="bg-slate-100 border font-mono p-4 rounded shadow w-full">{{ ip_data }}</pre>
+    <pre class="bg-slate-100 border font-mono p-4 rounded shadow text-sm w-full">{{ ip_status }}</pre>
+    <pre class="bg-slate-100 border font-mono p-4 rounded shadow text-sm w-full">{{ ip_data }}</pre>
   </div>
 </template>
 
