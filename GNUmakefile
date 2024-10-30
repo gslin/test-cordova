@@ -7,6 +7,7 @@ clean::
 	rm -rf node_modules/
 
 install::
+	cordova prepare
 	npm install
 
 run:: install
