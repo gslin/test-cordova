@@ -1,4 +1,13 @@
+import { createApp, ref } from 'vue/dist/vue.esm-bundler';
+
 const main = () => {
+  createApp({
+    setup() {
+      return {};
+    },
+  }).mount('#app');
+
+  /*
   const el = document.querySelector('textarea');
   el.innerText = 'fetching...';
 
@@ -7,6 +16,7 @@ const main = () => {
   }, res => {
     el.innerText = 'error\n' + res.error;
   });
+  */
 };
 
 document.addEventListener('deviceready', main, false);
