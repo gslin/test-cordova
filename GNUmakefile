@@ -4,7 +4,7 @@
 
 #
 clean::
-	rm -rf node_modules/ platforms/ plugins/
+	rm -fr node_modules/ platforms/ plugins/
 
 install::
 	cordova prepare
