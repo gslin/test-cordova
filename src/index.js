@@ -1,11 +1,12 @@
 import { createApp } from 'vue/dist/vue.esm-bundler';
 
+import App from './App.vue';
+import router from './router';
+
 const main = () => {
-  createApp({
-    setup() {
-      return {};
-    },
-  }).mount('#app');
+  createApp(App)
+    .use(router)
+    .mount('#app');
 
   /*
   const el = document.querySelector('textarea');
