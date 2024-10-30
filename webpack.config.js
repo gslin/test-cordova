@@ -9,7 +9,11 @@ module.exports = {
     rules: [{
       test: /\.vue$/,
       use: 'vue-loader',
-    }],
+    }, {
+      test: /\.css$/,
+      use: 'css-loader',
+    }
+    ],
   },
   output: {
     path: path.resolve(__dirname, 'www/js'),
